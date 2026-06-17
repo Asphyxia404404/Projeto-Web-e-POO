@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/Fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+* {
+  font-family: Poppins, Arial, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #0d0221;
+}
+
+header {
+  background: linear-gradient(to bottom, #8e5fc0, #5a3595, #0d0221);
+  padding: 15px 30px;
+  padding-left: 0;
+  padding-right: 0;
+  color: #ffffff;
+  border: none;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+header button:hover {
+  border: none;
+}
+
+.barra-de-pesquisa{
+  background: white;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.barra-de-pesquisa button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+
+.barra-de-pesquisa button:hover {
+  background: #ddd;
+  color: #000000;
+  border: none;
+}
+
+.dropdown-menu {
+  width: 300px;
+  border: none;
+  border-radius: 15px;
+  margin: 0;
+  padding: 8px;
+  background-color: #2e1a47;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  border: none;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: 0.8s;
+}
+
+.dropdown-item:hover {
+  background-color: #8e5fc0;
+  color: #0d0221;
+}
+
+.dropdown-toggle {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-section-title {
+  color: #cfcfcf;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 10px;
+  background: linear-gradient(to bottom, #5a3595, #8e5fc0);
+  color: #ffffff;
+}

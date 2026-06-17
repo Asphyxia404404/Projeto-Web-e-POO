@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+    <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elixir Store</title>
+  <script src="assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+   <th:block layout:fragment="css"></th:block>
+</head>
+
+<body>
+  <!-- Logo -->
+  <header class="container-fluid" id="base">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-auto dropdown">
+        <button class="btn d-flex align-items-center justify-content-start dropdown-toggle text-light fs-1"
+          type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="assets/images/Logo.png" alt="Logo" width="80" />
+          <h1 class="m-0 fs-3">Elixir Store</h1>
+        </button>
+
+        <!-- Menu -->
+        <ul class="dropdown-menu custom-dropdown">
+          <li class="dropdown-section-title">Usuário</li>
+          <li>
+            <a th:href="@{/}" class="dropdown-item text-light"><i class="bi bi-house-fill fs-4"></i>Inicio</a>
+          </li>
+          <li>
+            <a th:href="@{/catalogo}" class="dropdown-item text-light"><i
+                class="bi bi-bookmarks fs-4"></i>Catalogo</a>
+          </li>
+          <li>
+            <a th:href="@{/contato}" class="dropdown-item text-light"><i
+                class="bi bi-telephone-fill fs-4"></i>Contato</a>
+          </li>
+          <li>
+            <a th:href="@{/cadastro}" class="dropdown-item text-light"><i
+                class="bi bi-telephone-fill fs-4"></i>Cadastro</a>
+          </li>
+
+          <li class="dropdown-divider"></li>
+
+          <li class="dropdown-section-title">Administrador</li>
+          <li>
+            <a href="" class="dropdown-item text-light"><i class="bi bi-plus-square-fill fs-4"></i> Cadastrar Jogo</a>
+          </li>
+          <li>
+            <a href="" class="dropdown-item text-light"><i class="bi bi-card-list fs-4"></i> Gerenciar Catalogo</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col search-wrapper">
+        <div class="input-group barra-de-pesquisa">
+          <input type="text" class="form-control" placeholder="Procurar" id="BarraDeBuscar" />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">
+              <i class="bi bi-search fs-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto">
+        <a href=""><i class="bi bi-cart fs-1 text-light"></i></a>
+        <a href=""><i class="bi bi-bell-fill fs-1 text-light"></i></a>
+        <a href=""><i class="bi bi-person-circle fs-1 text-light"></i></a>
+      </div>
+    </div>
+  </header>
+    <main layout:fragment="content">
+
+    </main>
+  <footer class="row align-items-end justify-content-center">
+    Elixir Store - Tela Inicial
+  </footer>
+</body>
+</html>
